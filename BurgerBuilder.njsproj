@@ -58,6 +58,9 @@
     <Content Include="src\components\Order\CheckoutSummary\CheckoutSummary.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\components\Order\Order.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\Order\Order.js">
       <SubType>Code</SubType>
     </Content>
@@ -68,6 +71,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\containers\ContactData\ContactStyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\containers\Orders\Orders.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\hoc\Layout\Layout.css">
@@ -134,6 +140,7 @@
     <Folder Include="src\components\Order\CheckoutSummary\" />
     <Folder Include="src\containers\Checkout\" />
     <Folder Include="src\containers\ContactData\" />
+    <Folder Include="src\containers\Orders\" />
     <Folder Include="src\hoc\Layout\" />
     <Folder Include="src\components\Burger\" />
     <Folder Include="src\components\Navigation\" />
