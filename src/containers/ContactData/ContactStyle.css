@@ -1,0 +1,19 @@
+.ContactStyle {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #808080;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.Input {
+    display: block;
+    justify-content: center;
+}
+
+@media(min-width: 600px) {
+    .ContactStyle {
+        width: 500px;
+    }
+}

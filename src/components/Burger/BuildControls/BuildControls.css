@@ -1,0 +1,20 @@
+.BuildControls {
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+}
+
+.OrderButton {
+    width: 160px;
+    height: 40px;
+    background-color: #ffd800;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: central;
+}

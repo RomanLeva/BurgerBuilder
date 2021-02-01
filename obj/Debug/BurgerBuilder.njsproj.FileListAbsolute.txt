@@ -1,0 +1,3 @@
+C:\Users\pcv\source\repos\my_app_2\obj\Debug\BurgerBuilder.njsprojAssemblyReference.cache
+C:\Users\pcv\source\repos\my_app_2\obj\Debug\BurgerBuilder.njsproj.CoreCompileInputs.cache
+C:\Users\pcv\source\repos\my_app_2\bin\Microsoft.NodejsTools.WebRole.dll

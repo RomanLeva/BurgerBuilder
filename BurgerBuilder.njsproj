@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b50d1457-c8f3-47cc-8773-e695baace32e}</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>BurgerBuilder</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="public\index.html" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\manifest.json" />
+    <Content Include="src\App.css" />
+    <Content Include="src\assets\images\burger-logo.png" />
+    <Content Include="src\axios-orders.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\BuildControls\BuildControls.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\BuildControls\BuildControls.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\BuildControls\BuildControl\BuildControl.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\BuildControls\BuildControl\BuildControl.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\Burger.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\Burger.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\BurgerIngridient\BurgerIngredient.css" />
+    <Content Include="src\components\Burger\BurgerIngridient\BurgerIngredient.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Burger\OrderSummary\OrderSummary.js" />
+    <Content Include="src\components\Order\CheckoutSummary\CheckoutSummary.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Order\CheckoutSummary\CheckoutSummary.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Order\Order.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\containers\Checkout\Checkout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\containers\ContactData\ContactData.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\containers\ContactData\ContactStyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\hoc\Layout\Layout.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\hoc\Layout\Layout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Logo\Logo.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Logo\Logo.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Navigation\NavigationItems\NavigationItems.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Navigation\NavigationItems\NavigationItems.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Navigation\Toolbar\Toolbar.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Navigation\Toolbar\Toolbar.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\UI\Backdrop\Backdrop.css" />
+    <Content Include="src\components\UI\Backdrop\Backdrop.js" />
+    <Content Include="src\components\UI\Button\Button.css" />
+    <Content Include="src\components\UI\Button\Button.js" />
+    <Content Include="src\components\UI\Modal\Modal.css" />
+    <Content Include="src\components\UI\Modal\Modal.js" />
+    <Content Include="src\components\UI\Spinner\Spinner.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\UI\Spinner\Spinner.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\containers\BurgerBuilder\BurgerBuilder.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\hoc\ErrorHandler\ErrorHandler.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\hoc\MyAux.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\index.css" />
+    <Content Include="src\App.js" />
+    <Content Include="src\App.test.js" />
+    <Content Include="src\index.js" />
+    <Content Include="src\registerServiceWorker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public" />
+    <Folder Include="src" />
+    <Folder Include="src\assets\images\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\Burger\BuildControls\BuildControl\" />
+    <Folder Include="src\components\Burger\BurgerIngridient\" />
+    <Folder Include="src\components\Burger\BuildControls\" />
+    <Folder Include="src\components\Burger\OrderSummary\" />
+    <Folder Include="src\components\Order\" />
+    <Folder Include="src\components\Order\CheckoutSummary\" />
+    <Folder Include="src\containers\Checkout\" />
+    <Folder Include="src\containers\ContactData\" />
+    <Folder Include="src\hoc\Layout\" />
+    <Folder Include="src\components\Burger\" />
+    <Folder Include="src\components\Navigation\" />
+    <Folder Include="src\components\Navigation\NavigationItems\" />
+    <Folder Include="src\components\Navigation\Toolbar\" />
+    <Folder Include="src\components\Logo\" />
+    <Folder Include="src\components\UI\" />
+    <Folder Include="src\components\UI\Backdrop\" />
+    <Folder Include="src\components\UI\Button\" />
+    <Folder Include="src\components\UI\Modal\" />
+    <Folder Include="src\components\UI\Spinner\" />
+    <Folder Include="src\containers\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\containers\BurgerBuilder\" />
+    <Folder Include="src\hoc\" />
+    <Folder Include="src\hoc\ErrorHandler\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
