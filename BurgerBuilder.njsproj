@@ -126,6 +126,12 @@
     <Content Include="src\App.test.js" />
     <Content Include="src\index.js" />
     <Content Include="src\registerServiceWorker.js" />
+    <Content Include="src\store\actions.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\store\reducer.js">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public" />
@@ -157,6 +163,7 @@
     <Folder Include="src\containers\BurgerBuilder\" />
     <Folder Include="src\hoc\" />
     <Folder Include="src\hoc\ErrorHandler\" />
+    <Folder Include="src\store\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
