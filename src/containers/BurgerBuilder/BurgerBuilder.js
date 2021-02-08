@@ -8,21 +8,17 @@ import axios from '../../axios-orders';
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/ErrorHandler/ErrorHandler";
 import { connect } from 'react-redux';
-import * as actionTypes from '../../store/actions';
+import * as actions from '../../store/actions';
 
 class BurgerBuilder extends Component {
     state = {
         purchasing: false,
         loading: false,
-        error: null
+        error: false
     }
 
     componentDidMount() {
-        //axios.get('https://react-my-burger-e7af4-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json')
-        //    .then(res => this.setState({ ingredients: res.data }))
-        //    .catch(error => {
-        //        this.setState({ error: true });
-        //    });
+        this.props.initIngredients();
     }
 
     updatePurchaseState(ingredients) {
@@ -58,7 +54,7 @@ class BurgerBuilder extends Component {
 
         let orderSummary = null;
 
-        let burger = this.state.error ? <p>Error downloading ingredients!</p> : < Spinner />;
+        let burger = this.props.error ? <p>Error downloading ingredients!</p> : < Spinner />;
 
         if (this.props.ingredients) {
             burger = (
@@ -100,14 +96,16 @@ class BurgerBuilder extends Component {
 const mapStateToProps = state => {
     return {
         ingredients: state.ingredients,
-        totalPrice: state.totalPrice
+        totalPrice: state.totalPrice,
+        error: state.error
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        addIngredient: (ingredientName) => dispatch({ type: actionTypes.ADD_INGREDIENT, ingredientName: ingredientName }),
-        removeIngredient: (ingredientName) => dispatch({ type: actionTypes.REMOVE_INGREDIENT, ingredientName: ingredientName })
+        addIngredient: (ingredientName) => dispatch({ type: actions.ADD_INGREDIENT, ingredientName: ingredientName }),
+        removeIngredient: (ingredientName) => dispatch({ type: actions.REMOVE_INGREDIENT, ingredientName: ingredientName }),
+        initIngredients: () => dispatch(actions.fetchInitIngredients())
     };
 };
 
